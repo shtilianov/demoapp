@@ -1,0 +1,100 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <RootNamespace>new_test_project</RootNamespace>
+    <AssemblyName>new-test-project</AssemblyName>
+    <OutputPath>bin</OutputPath>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ArtOfTest.WebAii, Version=2018.3.1213.0, Culture=neutral, PublicKeyToken=4fd5f65be123776c">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="ArtOfTest.WebAii.Design, Version=2018.3.1213.0, Culture=neutral, PublicKeyToken=4fc62bbc3827ab1d">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <Reference Include="Telerik.TestingFramework.Controls.KendoUI, Version=2018.3.1213.0, Culture=neutral, PublicKeyToken=528163f3e645de45">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Telerik.TestingFramework.Controls.KendoUI.Angular, Version=2018.3.1213.0, Culture=neutral, PublicKeyToken=528163f3e645de45">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Telerik.TestStudio.Translators.Common, Version=2018.3.1213.0, Culture=neutral, PublicKeyToken=528163f3e645de45">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Telerik.WebAii.Controls.Html, Version=2018.3.1213.0, Culture=neutral, PublicKeyToken=528163f3e645de45">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Telerik.WebAii.Controls.Xaml, Version=2018.3.1213.0, Culture=neutral, PublicKeyToken=528163f3e645de45">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="Telerik.WebAii.Controls.Xaml.Wpf, Version=2018.3.1213.0, Culture=neutral, PublicKeyToken=528163f3e645de45">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nested test steps\for Test #3 - Fill Out and Submitting a form (containing multiple fields) (data-driven).tstest" />
+    <None Include="nested test steps\Login with correct credentials.tstest" />
+    <None Include="Settings.aiis" />
+    <None Include="Test #0 - Attempt login with invalid credentials, verify correct error message.tstest" />
+    <None Include="Test #1 - Attempt login with valid credentials, verify successful.tstest" />
+    <None Include="Test #2 - Fill Out and Submitting a form (containing multiple fields).tstest" />
+    <None Include="Test #3 - Fill Out and Submitting a form (containing multiple fields) (data-driven).tstest" />
+    <None Include="Test #4 - Search a grid, verify specifc search result is in the grid.tstest" />
+    <None Include="Test #5 - Choose specifc item from a grid and delete it, verify deletion.tstest" />
+    <None Include="Test #6 - Delete multiple messages, verify deletion.tstest" />
+    <None Include="Test #7 - Failing Test.tstest" />
+    <Compile Include="FindElementHelper.cs" />
+    <Compile Include="Test #4 - Search a grid, verify specifc search result is in the grid.tstest.cs">
+      <DependentUpon>Test #4 - Search a grid, verify specifc search result is in the grid.tstest</DependentUpon>
+    </Compile>
+    <Compile Include="Test #6 - Delete multiple messages, verify deletion.tstest.cs">
+      <DependentUpon>Test #6 - Delete multiple messages, verify deletion.tstest</DependentUpon>
+    </Compile>
+    <Folder Include="nested test steps" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="nested test steps\for Test #3 - Fill Out and Submitting a form (containing multiple fields) (data-driven).resx">
+      <DependentUpon>for Test #3 - Fill Out and Submitting a form (containing multiple fields) (data-driven).tstest</DependentUpon>
+    </None>
+    <None Include="nested test steps\Login with correct credentials.resx">
+      <DependentUpon>Login with correct credentials.tstest</DependentUpon>
+    </None>
+    <None Include="Test #0 - Attempt login with invalid credentials, verify correct error message.resx">
+      <DependentUpon>Test #0 - Attempt login with invalid credentials, verify correct error message.tstest</DependentUpon>
+    </None>
+    <None Include="Test #1 - Attempt login with valid credentials, verify successful.resx">
+      <DependentUpon>Test #1 - Attempt login with valid credentials, verify successful.tstest</DependentUpon>
+    </None>
+    <None Include="Test #2 - Fill Out and Submitting a form (containing multiple fields).resx">
+      <DependentUpon>Test #2 - Fill Out and Submitting a form (containing multiple fields).tstest</DependentUpon>
+    </None>
+    <None Include="Test #3 - Fill Out and Submitting a form (containing multiple fields) (data-driven).resx">
+      <DependentUpon>Test #3 - Fill Out and Submitting a form (containing multiple fields) (data-driven).tstest</DependentUpon>
+    </None>
+    <None Include="Test #4 - Search a grid, verify specifc search result is in the grid.resx">
+      <DependentUpon>Test #4 - Search a grid, verify specifc search result is in the grid.tstest</DependentUpon>
+    </None>
+    <None Include="Test #5 - Choose specifc item from a grid and delete it, verify deletion.resx">
+      <DependentUpon>Test #5 - Choose specifc item from a grid and delete it, verify deletion.tstest</DependentUpon>
+    </None>
+    <None Include="Test #6 - Delete multiple messages, verify deletion.resx">
+      <DependentUpon>Test #6 - Delete multiple messages, verify deletion.tstest</DependentUpon>
+    </None>
+    <None Include="Test #7 - Failing Test.resx">
+      <DependentUpon>Test #7 - Failing Test.tstest</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties Name="Demo App Project" Version="2018.3.1207.0" VsProjectLanguage="CSharp" xmlns="" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Condition="true" Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Condition="true" Project="$(MSBuildExtensionsPath)\Telerik\WebUITestStudio\Telerik.WebUITestStudio.targets" />
+</Project>
